@@ -1,0 +1,2 @@
+for n in range(1, 101):
+   print("Hop-Viz") if n % 15 == 0 else print("hop") if n % 3 == 0 else print("Viz") if n % 5 == 0 else print(n)
