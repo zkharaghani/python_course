@@ -1,0 +1,11 @@
+summation = 0
+count = 0
+mean = 0
+while True:
+    inp = input("Enter a number or quit: ")
+    if inp == "quit":
+        break
+    summation += float(inp)
+    count += 1
+mean += summation / count
+print(f'mean of numbers is equal to {mean:.2f}')
