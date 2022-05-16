@@ -1,11 +1,15 @@
-summation = 0
-count = 0
-mean = 0
+sumValue = 0
+counter = 0
 while True:
-    inp = input("Enter a number or quit: ")
-    if inp == "quit":
+    inp = input("Enter an integer: ")
+    if inp.lower() == 'q' or inp.lower() == 'quit':
         break
-    summation += float(inp)
-    count += 1
-mean += summation / count
-print(f'mean of numbers is equal to {mean:.2f}')
+    if not inp.isdigit():
+        continue
+    else:
+        sumValue += int(inp)
+        print(sumValue)
+        counter += 1
+meanValue = sumValue / counter
+print(meanValue)
+
