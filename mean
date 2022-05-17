@@ -1,3 +1,6 @@
+# Mean of numbers
+
+print('=' * 40)
 sumValue = 0
 counter = 0
 while True:
@@ -7,9 +10,8 @@ while True:
     if not inp.isdigit():
         continue
     else:
-        sumValue += int(inp)
-        print(sumValue)
+        sumValue += float(inp)
+        print(f'The sum of numbers is equal to {sumValue:.2f}')
         counter += 1
-meanValue = sumValue / counter
-print(meanValue)
-
+    meanValue = sumValue / counter
+    print(f'The mean of numbers is equal to {meanValue:.2f}')
