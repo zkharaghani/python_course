@@ -1,0 +1,3 @@
+alphabetString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in range(1,len(alphabetString)+1):
+    print(alphabetString[-i])

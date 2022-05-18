@@ -1,0 +1,10 @@
+for n in range(1, 100):
+   print("HopWiz") if n % 21 == 0 else print("hop") if n % 3 == 0 else print("Wiz") if n % 7 == 0 else print(n)
+
+
+
+# pythonic form of HopWiz game
+
+for num in range(1, 100):
+    decision = 'HopWiz' if num in range(0, 100, 21) else 'Hop' if num in range(0, 100, 3) else 'Wiz' if num in range(0, 100, 7) else str(num)
+    print(decision)
