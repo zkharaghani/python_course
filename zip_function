@@ -1,4 +1,0 @@
-sampleAlphabet = "ABCDEF"
-sampleNumber = "123456"
-for num, char in zip(reversed(sampleNumber), reversed(sampleAlphabet)):
-    print('{}: {}'.format(num, char))
