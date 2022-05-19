@@ -1,5 +1,0 @@
-while True:
-    number = float(input("Enter an integer number: "))
-    if number == int(number):
-        print("Well done!")
-        break
