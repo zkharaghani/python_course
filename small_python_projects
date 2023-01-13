@@ -1,0 +1,22 @@
+class AnalysedText(object):
+
+    def __init__ (self, text):
+        for item in text:
+            if item in ['.', ',', '!', '?']:
+                text = text.replace(item, '')  # Remove punctuations
+                formattedText = text.lower()  # Make text lowercase
+        self.fmtText = formattedText
+
+    def freqAll(self):
+        word_list = self.fmtText.split()  # Split text into words
+        dict = {}
+        for item in set(word_list):
+            dict[item] = word_list.count(item)  # Create dictionary
+        return dict
+    # Get frequency of a word
+    def freqOf(self, word):
+        word_dict = self.freqAll()
+        if word  in word_dict:
+            return word_dict[word]
+        else:
+            return 0
