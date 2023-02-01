@@ -1,5 +1,10 @@
-class AnalysedText(object):
+#  create a utility tool that can perform analysis on a given piece of text
 
+class AnalysedText(object):
+"""Take the argument text, make it lowercase, and remove all punctuation. 
+Create and return a dictionary of all unique words in the text, 
+along with the number of times they occur in the text.
+Then take a word as an argument and return the number of occurrences of that word in Text"""
     def __init__ (self, text):
         for item in text:
             if item in ['.', ',', '!', '?']:
